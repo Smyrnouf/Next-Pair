@@ -17,12 +17,10 @@
       --text: #270015;
       --muted: #6f625d;
       --line: #ded4c6;
-      --green: #270015;
+      --plum: #270015;
       --gold: #c4921b;
-      --gold-bright: #e9bf0e;
+      --gold-light: #e9bf0e;
       --cream: #f1e2c6;
-      --brown: #4e443f;
-      --soft: #f1e2c6;
       --max: 1120px;
     }
 
@@ -54,35 +52,31 @@
     header {
       position: sticky;
       top: 0;
-      z-index: 5;
-      background: #f6f5f0ee;
+      z-index: 10;
+      background: #fcfbf5ee;
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--line);
     }
 
     .nav {
-      min-height: 72px;
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: 24px;
     }
 
     .logo {
-      font: 700 22px "Space Grotesk", sans-serif;
-      letter-spacing: -1px;
+      display: inline-flex;
+      align-items: center;
+      width: 145px;
     }
 
-    .logo span {
-      display: inline-grid;
-      place-items: center;
-      width: 32px;
-      height: 32px;
-      margin-right: 8px;
-      border: 2px solid var(--green);
-      border-radius: 50%;
-      font-size: 11px;
-      color: var(--green);
+    .logo img {
+      display: block;
+      width: 145px;
+      max-height: 58px;
+      object-fit: contain;
     }
 
     nav {
@@ -93,7 +87,7 @@
     }
 
     nav a:hover {
-      color: var(--green);
+      color: var(--gold);
     }
 
     .btn {
@@ -102,19 +96,32 @@
       border-radius: 30px;
       font-weight: 700;
       font-size: 14px;
-      border: 1px solid var(--green);
+      border: 1px solid var(--plum);
+      transition: .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
     }
 
     .primary {
-      background: var(--green);
+      background: var(--plum);
       color: #ffffff;
-      border-color: var(--green);
+    }
+
+    .primary:hover {
+      background: var(--gold);
+      border-color: var(--gold);
     }
 
     .secondary {
       background: transparent;
-      color: var(--green);
+      color: var(--plum);
       border-color: var(--gold);
+    }
+
+    .secondary:hover {
+      background: var(--cream);
     }
 
     section {
@@ -154,7 +161,7 @@
     }
 
     h1 em {
-      color: var(--green);
+      color: var(--gold);
       font-style: normal;
     }
 
@@ -185,7 +192,7 @@
     .hero-art {
       min-height: 430px;
       border-radius: 28px;
-      background: var(--soft);
+      background: var(--cream);
       display: grid;
       place-items: center;
       position: relative;
@@ -221,7 +228,7 @@
         #270015 63%
       );
       transform: rotate(-15deg);
-      filter: drop-shadow(0 24px 14px #0003);
+      filter: drop-shadow(0 24px 14px #0004);
       position: relative;
     }
 
@@ -253,8 +260,14 @@
       border-right: 0;
     }
 
+    .trust b,
+    .step strong,
+    .price strong,
+    .vinted {
+      color: var(--gold);
+    }
+
     .trust b {
-      color: var(--green);
       font: 700 24px "Space Grotesk";
     }
 
@@ -265,14 +278,13 @@
     }
 
     .trust p,
-    .product p,
     .step p {
       color: var(--muted);
       font-size: 14px;
     }
 
     .products {
-      background: var(--soft);
+      background: var(--cream);
     }
 
     .cards,
@@ -292,7 +304,7 @@
 
     .photo {
       aspect-ratio: 1.2;
-      background: #eef0eb;
+      background: #f7f1e5;
       display: grid;
       place-items: center;
       color: var(--muted);
@@ -320,6 +332,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
       margin-top: 18px;
     }
 
@@ -328,7 +341,6 @@
     }
 
     .vinted {
-      color: var(--green);
       font-weight: 700;
       font-size: 13px;
     }
@@ -345,9 +357,9 @@
     }
 
     .quote {
-      border-left: 2px solid var(--green);
+      border-left: 2px solid var(--gold);
       padding-left: 20px;
-      color: var(--green) !important;
+      color: var(--gold) !important;
       font: 700 28px/1.2 "Space Grotesk";
     }
 
@@ -356,7 +368,6 @@
     }
 
     .step strong {
-      color: var(--green);
       font: 700 40px "Space Grotesk";
     }
 
@@ -383,8 +394,8 @@
     }
 
     .cta {
-      background: var(--green);
-      color: white;
+      background: var(--plum);
+      color: #ffffff;
       border-radius: 25px;
       padding: 55px;
       margin-bottom: 85px;
@@ -399,8 +410,14 @@
     }
 
     .cta .primary {
-      background: var(--gold-bright);
-      border-color: var(--gold-bright);
+      background: var(--gold);
+      color: var(--plum);
+      border-color: var(--gold);
+    }
+
+    .cta .primary:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
     }
 
     footer {
@@ -468,7 +485,7 @@
         left: 14px;
         right: 14px;
         text-align: center;
-        box-shadow: 0 8px 25px #0003;
+        box-shadow: 0 8px 25px #0004;
       }
 
       footer {
@@ -490,6 +507,14 @@
       .trust article:last-child {
         border-bottom: 0 !important;
       }
+
+      .logo {
+        width: 120px;
+      }
+
+      .logo img {
+        width: 120px;
+      }
     }
   </style>
 </head>
@@ -499,11 +524,11 @@
   <header>
     <div class="wrap nav">
 
-       <a class="logo" href="#accueil" aria-label="Next Pair, accueil">
-         <img
+      <a class="logo" href="#accueil" aria-label="Next Pair, accueil">
+        <img
           src="assets/next-pair-logo.png"
           alt="Logo Next Pair"
-         >
+        >
       </a>
 
       <nav>
