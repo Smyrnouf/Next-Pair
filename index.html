@@ -70,13 +70,15 @@
       display: inline-flex;
       align-items: center;
       width: 145px;
+      height: 58px;
     }
 
     .logo img {
       display: block;
       width: 145px;
-      max-height: 58px;
+      height: 58px;
       object-fit: contain;
+      object-position: center;
     }
 
     nav {
@@ -524,18 +526,12 @@
   <header>
     <div class="wrap nav">
 
-     .logo {
-  display: inline-flex;
-  align-items: center;
-  width: 145px;
-}
-
-.logo img {
-  display: block;
-  width: 145px;
-  max-height: 58px;
-  object-fit: contain;
-}
+      <a class="logo" href="#accueil" aria-label="Next Pair, accueil">
+        <img
+          src="assets/image.jpg"
+          alt="Logo Next Pair"
+        >
+      </a>
 
       <nav>
         <a href="#selection">Sélection</a>
