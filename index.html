@@ -12,13 +12,17 @@
 
   <style>
     :root {
-      --bg: #f6f5f0;
+      --bg: #fcfbf5;
       --card: #ffffff;
-      --text: #171916;
-      --muted: #686c64;
-      --line: #dfe1da;
-      --green: #204d42;
-      --soft: #e3eee6;
+      --text: #270015;
+      --muted: #6f625d;
+      --line: #ded4c6;
+      --green: #270015;
+      --gold: #c4921b;
+      --gold-bright: #e9bf0e;
+      --cream: #f1e2c6;
+      --brown: #4e443f;
+      --soft: #f1e2c6;
       --max: 1120px;
     }
 
@@ -103,12 +107,14 @@
 
     .primary {
       background: var(--green);
-      color: white;
+      color: #ffffff;
+      border-color: var(--green);
     }
 
     .secondary {
       background: transparent;
       color: var(--green);
+      border-color: var(--gold);
     }
 
     section {
@@ -127,7 +133,7 @@
     }
 
     .eyebrow {
-      color: var(--green);
+      color: var(--gold);
       font-weight: 700;
       font-size: 12px;
       letter-spacing: 2px;
@@ -191,7 +197,7 @@
       position: absolute;
       top: 35px;
       left: 25px;
-      color: #204d4220;
+      color: #c4921b30;
       font: 700 100px/.8 "Space Grotesk";
     }
 
@@ -199,7 +205,7 @@
       width: 72%;
       aspect-ratio: 1;
       border-radius: 50%;
-      background: #c9dfd0;
+      background: var(--gold);
       display: grid;
       place-items: center;
     }
@@ -210,9 +216,9 @@
       border-radius: 60% 35% 25% 15%;
       background: linear-gradient(
         145deg,
-        #fff 0 35%,
-        #cbd4cd 36% 62%,
-        #536b5d 63%
+        #fcfbf5 0 35%,
+        #d8c7a7 36% 62%,
+        #270015 63%
       );
       transform: rotate(-15deg);
       filter: drop-shadow(0 24px 14px #0003);
@@ -224,7 +230,7 @@
       position: absolute;
       top: 30%;
       left: 47%;
-      color: var(--green);
+      color: var(--gold);
       font: bold 18px "Space Grotesk";
     }
 
@@ -393,8 +399,8 @@
     }
 
     .cta .primary {
-      background: white;
-      color: var(--green);
+      background: var(--gold-bright);
+      border-color: var(--gold-bright);
     }
 
     footer {
