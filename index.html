@@ -524,9 +524,18 @@
   <header>
     <div class="wrap nav">
 
-      <a class="logo" href="#accueil" aria-label="Next Pair, accueil">
-        <img src="assets/next-pair-logo.png" alt="Logo Next Pair">
-      </a>
+     .logo {
+  display: inline-flex;
+  align-items: center;
+  width: 145px;
+}
+
+.logo img {
+  display: block;
+  width: 145px;
+  max-height: 58px;
+  object-fit: contain;
+}
 
       <nav>
         <a href="#selection">Sélection</a>
